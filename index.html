@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>frameillusioner.com</title>
+    <link rel="icon" type="image/png" href="D:\frameillusioner.com\Images\Company Logo\FI_logo.jpeg"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .maintenance-content {
+            text-align: center;
+            opacity: 0;
+            animation: fade-in 1.5s ease-in-out forwards;
+        }
+
+        @keyframes fade-in {
+            from {
+                opacity: 0;
+                transform: translateY(20px); /* Move from bottom to top */
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .loader-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .loader {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        @media (max-width: 768px) {
+            .maintenance-content {
+                font-size: 18px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .maintenance-content {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="maintenance-content">
+        <h1>Under Maintenance</h1>
+        <p>We are currently working on the site. Please check back later.</p>
+        <div class="loader-container">
+            <div class="loader"></div>
+        </div>
+    </div>
+</body>
+</html>
