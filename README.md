@@ -30,3 +30,9 @@ Our vision is to be at the forefront of the animation industry, pushing the boun
 * * * * *
 
 *Copyright © 2024 Frame Illusioner Studio. All rights reserved.*
+
+* * * * *
+
+This website is designed, developed, and maintained by:
+Debapriya Sengupta 
+GitHub: [DebapriyaSengupta28](https://github.com/DebapriyaSengupta28)
